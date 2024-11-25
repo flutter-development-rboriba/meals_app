@@ -21,6 +21,8 @@ class MealDetailsScreen extends StatelessWidget {
             onPressed: () {
               onToggleFavorite(meal);
             },
+            // Task: Toggle the Icon star every time the favorite is
+            // added or removed to the Favorite list
             icon: const Icon(Icons.star),
           )
         ],
