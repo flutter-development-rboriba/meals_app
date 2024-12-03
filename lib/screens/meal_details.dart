@@ -36,10 +36,17 @@ class MealDetailsScreen extends ConsumerWidget {
                 ),
               );
             },
-            // Task: Toggle the Icon star every time the favorite is
-            // added or removed to the Favorite list
-            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
-          )
+            icon: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 300),
+              transitionBuilder: (child, animation) {
+                return RotationTransition(
+                  turns: animation,
+                  child: child,
+                );
+              },
+              child: Icon(isFavorite ? Icons.star : Icons.star_border),
+            ),
+          ),
         ],
       ),
       body: SingleChildScrollView(
