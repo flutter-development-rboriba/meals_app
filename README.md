@@ -1,6 +1,7 @@
 # meals_app
 
 A new Flutter project.
+![Meals App](./meals_app.gif)
 
 ## Getting Started
 
